@@ -1,0 +1,4 @@
+langchain>=1.0
+langgraph>=1.0
+langchain-openai       # OpenAI-compatible client: works with any provider via LLM_BASE_URL
+python-dotenv          # reads LLM_API_KEY / LLM_MODEL / LLM_BASE_URL from the .env file

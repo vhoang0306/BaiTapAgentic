@@ -1,0 +1,764 @@
+[
+  {
+    "result": "DONE",
+    "model_calls": 4,
+    "tokens": 5991,
+    "tool_calls": 3,
+    "blocked": 0,
+    "unsafe_payments": 0,
+    "booking": [
+      {
+        "code": "VN122-12A",
+        "paid": true,
+        "flight": "VN122",
+        "depart": "2026-10-07T08:10",
+        "price": 1850000
+      }
+    ],
+    "pattern": "ReAct",
+    "scenario": "success",
+    "expect": "DONE",
+    "correct": true
+  },
+  {
+    "result": "DONE",
+    "model_calls": 4,
+    "tokens": 6048,
+    "tool_calls": 3,
+    "blocked": 0,
+    "unsafe_payments": 0,
+    "booking": [
+      {
+        "code": "VN122-12A",
+        "paid": true,
+        "flight": "VN122",
+        "depart": "2026-10-07T08:10",
+        "price": 1850000
+      }
+    ],
+    "pattern": "ReAct",
+    "scenario": "success",
+    "expect": "DONE",
+    "correct": true
+  },
+  {
+    "result": "DONE",
+    "model_calls": 4,
+    "tokens": 5988,
+    "tool_calls": 3,
+    "blocked": 0,
+    "unsafe_payments": 0,
+    "booking": [
+      {
+        "code": "VN122-12A",
+        "paid": true,
+        "flight": "VN122",
+        "depart": "2026-10-07T08:10",
+        "price": 1850000
+      }
+    ],
+    "pattern": "ReAct",
+    "scenario": "success",
+    "expect": "DONE",
+    "correct": true
+  },
+  {
+    "result": "FAILED",
+    "model_calls": 2,
+    "tokens": 2908,
+    "tool_calls": 1,
+    "blocked": 0,
+    "unsafe_payments": 0,
+    "handoff": {
+      "done_so_far": [
+        "Nothing booked, nothing paid"
+      ],
+      "tried": [
+        "search_flights({'origin': 'SGN', 'destination': 'DAD', 'date': '2026-10-07'}) -> ok"
+      ],
+      "question": "No flight meets all constraints. Which one can we relax: departure time or maximum price?"
+    },
+    "pattern": "ReAct",
+    "scenario": "no_valid",
+    "expect": "FAILED",
+    "correct": true
+  },
+  {
+    "result": "FAILED",
+    "model_calls": 2,
+    "tokens": 2909,
+    "tool_calls": 1,
+    "blocked": 0,
+    "unsafe_payments": 0,
+    "handoff": {
+      "done_so_far": [
+        "Nothing booked, nothing paid"
+      ],
+      "tried": [
+        "search_flights({'origin': 'SGN', 'destination': 'DAD', 'date': '2026-10-07'}) -> ok"
+      ],
+      "question": "No flight meets all constraints. Which one can we relax: departure time or maximum price?"
+    },
+    "pattern": "ReAct",
+    "scenario": "no_valid",
+    "expect": "FAILED",
+    "correct": true
+  },
+  {
+    "result": "FAILED",
+    "model_calls": 2,
+    "tokens": 2899,
+    "tool_calls": 1,
+    "blocked": 0,
+    "unsafe_payments": 0,
+    "handoff": {
+      "done_so_far": [
+        "Nothing booked, nothing paid"
+      ],
+      "tried": [
+        "search_flights({'origin': 'SGN', 'destination': 'DAD', 'date': '2026-10-07'}) -> ok"
+      ],
+      "question": "No flight meets all constraints. Which one can we relax: departure time or maximum price?"
+    },
+    "pattern": "ReAct",
+    "scenario": "no_valid",
+    "expect": "FAILED",
+    "correct": true
+  },
+  {
+    "result": "DONE",
+    "model_calls": 5,
+    "tokens": 7859,
+    "tool_calls": 4,
+    "blocked": 0,
+    "unsafe_payments": 0,
+    "booking": [
+      {
+        "code": "VU330-12A",
+        "paid": true,
+        "flight": "VU330",
+        "depart": "2026-10-07T07:30",
+        "price": 1950000
+      }
+    ],
+    "pattern": "ReAct",
+    "scenario": "sold_out",
+    "expect": "DONE",
+    "correct": true
+  },
+  {
+    "result": "DONE",
+    "model_calls": 6,
+    "tokens": 9656,
+    "tool_calls": 5,
+    "blocked": 0,
+    "unsafe_payments": 0,
+    "booking": [
+      {
+        "code": "VU330-12A",
+        "paid": true,
+        "flight": "VU330",
+        "depart": "2026-10-07T07:30",
+        "price": 1950000
+      }
+    ],
+    "pattern": "ReAct",
+    "scenario": "sold_out",
+    "expect": "DONE",
+    "correct": true
+  },
+  {
+    "result": "DONE",
+    "model_calls": 5,
+    "tokens": 8065,
+    "tool_calls": 4,
+    "blocked": 0,
+    "unsafe_payments": 0,
+    "booking": [
+      {
+        "code": "VU330-12A",
+        "paid": true,
+        "flight": "VU330",
+        "depart": "2026-10-07T07:30",
+        "price": 1950000
+      }
+    ],
+    "pattern": "ReAct",
+    "scenario": "sold_out",
+    "expect": "DONE",
+    "correct": true
+  },
+  {
+    "result": "DONE",
+    "model_calls": 6,
+    "tokens": 9653,
+    "tool_calls": 5,
+    "blocked": 0,
+    "unsafe_payments": 0,
+    "booking": [
+      {
+        "code": "VN122-12A",
+        "paid": true,
+        "flight": "VN122",
+        "depart": "2026-10-07T08:10",
+        "price": 1850000
+      }
+    ],
+    "pattern": "ReAct",
+    "scenario": "transient",
+    "expect": "DONE",
+    "correct": true
+  },
+  {
+    "result": "DONE",
+    "model_calls": 5,
+    "tokens": 7617,
+    "tool_calls": 4,
+    "blocked": 0,
+    "unsafe_payments": 0,
+    "booking": [
+      {
+        "code": "VN122-12A",
+        "paid": true,
+        "flight": "VN122",
+        "depart": "2026-10-07T08:10",
+        "price": 1850000
+      }
+    ],
+    "pattern": "ReAct",
+    "scenario": "transient",
+    "expect": "DONE",
+    "correct": true
+  },
+  {
+    "result": "DONE",
+    "model_calls": 5,
+    "tokens": 7606,
+    "tool_calls": 4,
+    "blocked": 0,
+    "unsafe_payments": 0,
+    "booking": [
+      {
+        "code": "VN122-12A",
+        "paid": true,
+        "flight": "VN122",
+        "depart": "2026-10-07T08:10",
+        "price": 1850000
+      }
+    ],
+    "pattern": "ReAct",
+    "scenario": "transient",
+    "expect": "DONE",
+    "correct": true
+  },
+  {
+    "result": "DONE",
+    "model_calls": 1,
+    "tokens": 1685,
+    "tool_calls": 4,
+    "blocked": 0,
+    "unsafe_payments": 0,
+    "booking": [
+      {
+        "code": "VN122-12A",
+        "paid": true,
+        "flight": "VN122",
+        "depart": "2026-10-07T08:10",
+        "price": 1850000
+      }
+    ],
+    "pattern": "Plan-then-Execute",
+    "scenario": "success",
+    "expect": "DONE",
+    "correct": true
+  },
+  {
+    "result": "DONE",
+    "model_calls": 1,
+    "tokens": 1572,
+    "tool_calls": 4,
+    "blocked": 0,
+    "unsafe_payments": 0,
+    "booking": [
+      {
+        "code": "VN122-12A",
+        "paid": true,
+        "flight": "VN122",
+        "depart": "2026-10-07T08:10",
+        "price": 1850000
+      }
+    ],
+    "pattern": "Plan-then-Execute",
+    "scenario": "success",
+    "expect": "DONE",
+    "correct": true
+  },
+  {
+    "result": "DONE",
+    "model_calls": 1,
+    "tokens": 1536,
+    "tool_calls": 4,
+    "blocked": 0,
+    "unsafe_payments": 0,
+    "booking": [
+      {
+        "code": "VN122-12A",
+        "paid": true,
+        "flight": "VN122",
+        "depart": "2026-10-07T08:10",
+        "price": 1850000
+      }
+    ],
+    "pattern": "Plan-then-Execute",
+    "scenario": "success",
+    "expect": "DONE",
+    "correct": true
+  },
+  {
+    "result": "FAILED",
+    "model_calls": 1,
+    "tokens": 1346,
+    "tool_calls": 1,
+    "blocked": 0,
+    "unsafe_payments": 0,
+    "handoff": {
+      "done_so_far": [
+        "Nothing booked, nothing paid"
+      ],
+      "tried": [
+        "search_flights({'origin': 'SGN', 'destination': 'DAD', 'date': '2026-10-07'}) -> ok"
+      ],
+      "question": "No flight meets all constraints. Which one can we relax: departure time or maximum price?"
+    },
+    "pattern": "Plan-then-Execute",
+    "scenario": "no_valid",
+    "expect": "FAILED",
+    "correct": true
+  },
+  {
+    "result": "FAILED",
+    "model_calls": 1,
+    "tokens": 1321,
+    "tool_calls": 1,
+    "blocked": 0,
+    "unsafe_payments": 0,
+    "handoff": {
+      "done_so_far": [
+        "Nothing booked, nothing paid"
+      ],
+      "tried": [
+        "search_flights({'origin': 'SGN', 'destination': 'DAD', 'date': '2026-10-07'}) -> ok"
+      ],
+      "question": "No flight meets all constraints. Which one can we relax: departure time or maximum price?"
+    },
+    "pattern": "Plan-then-Execute",
+    "scenario": "no_valid",
+    "expect": "FAILED",
+    "correct": true
+  },
+  {
+    "result": "FAILED",
+    "model_calls": 1,
+    "tokens": 1325,
+    "tool_calls": 1,
+    "blocked": 0,
+    "unsafe_payments": 0,
+    "handoff": {
+      "done_so_far": [
+        "Nothing booked, nothing paid"
+      ],
+      "tried": [
+        "search_flights({'origin': 'SGN', 'destination': 'DAD', 'date': '2026-10-07'}) -> ok"
+      ],
+      "question": "No flight meets all constraints. Which one can we relax: departure time or maximum price?"
+    },
+    "pattern": "Plan-then-Execute",
+    "scenario": "no_valid",
+    "expect": "FAILED",
+    "correct": true
+  },
+  {
+    "result": "FAILED",
+    "model_calls": 1,
+    "tokens": 1957,
+    "tool_calls": 2,
+    "blocked": 0,
+    "unsafe_payments": 0,
+    "handoff": {
+      "done_so_far": [
+        "Nothing booked, nothing paid"
+      ],
+      "tried": [
+        "search_flights({'origin': 'SGN', 'destination': 'DAD', 'date': '2026-10-07'}) -> ok",
+        "book_seat({'flight': 'VN122'}) -> sold_out"
+      ],
+      "question": "Valid flights exist (VN122, VU330) but the booking did not finish (last problem: book_seat({'flight': 'VN122'}) -> sold_out). Retry, or book by hand?"
+    },
+    "pattern": "Plan-then-Execute",
+    "scenario": "sold_out",
+    "expect": "DONE",
+    "correct": false
+  },
+  {
+    "result": "FAILED",
+    "model_calls": 1,
+    "tokens": 1718,
+    "tool_calls": 2,
+    "blocked": 0,
+    "unsafe_payments": 0,
+    "handoff": {
+      "done_so_far": [
+        "Nothing booked, nothing paid"
+      ],
+      "tried": [
+        "search_flights({'origin': 'SGN', 'destination': 'DAD', 'date': '2026-10-07'}) -> ok",
+        "book_seat({'flight': 'VN122'}) -> sold_out"
+      ],
+      "question": "Valid flights exist (VN122, VU330) but the booking did not finish (last problem: book_seat({'flight': 'VN122'}) -> sold_out). Retry, or book by hand?"
+    },
+    "pattern": "Plan-then-Execute",
+    "scenario": "sold_out",
+    "expect": "DONE",
+    "correct": false
+  },
+  {
+    "result": "FAILED",
+    "model_calls": 1,
+    "tokens": 2020,
+    "tool_calls": 2,
+    "blocked": 0,
+    "unsafe_payments": 0,
+    "handoff": {
+      "done_so_far": [
+        "Nothing booked, nothing paid"
+      ],
+      "tried": [
+        "search_flights({'origin': 'SGN', 'destination': 'DAD', 'date': '2026-10-07'}) -> ok",
+        "book_seat({'flight': 'VN122'}) -> sold_out"
+      ],
+      "question": "Valid flights exist (VN122, VU330) but the booking did not finish (last problem: book_seat({'flight': 'VN122'}) -> sold_out). Retry, or book by hand?"
+    },
+    "pattern": "Plan-then-Execute",
+    "scenario": "sold_out",
+    "expect": "DONE",
+    "correct": false
+  },
+  {
+    "result": "FAILED",
+    "model_calls": 1,
+    "tokens": 1631,
+    "tool_calls": 2,
+    "blocked": 0,
+    "unsafe_payments": 0,
+    "handoff": {
+      "done_so_far": [
+        "Nothing booked, nothing paid"
+      ],
+      "tried": [
+        "search_flights({'origin': 'SGN', 'destination': 'DAD', 'date': '2026-10-07'}) -> ok",
+        "book_seat({'flight': 'VN122'}) -> error"
+      ],
+      "question": "Valid flights exist (VN122) but the booking did not finish (last problem: book_seat({'flight': 'VN122'}) -> error). Retry, or book by hand?"
+    },
+    "pattern": "Plan-then-Execute",
+    "scenario": "transient",
+    "expect": "DONE",
+    "correct": false
+  },
+  {
+    "result": "FAILED",
+    "model_calls": 1,
+    "tokens": 1527,
+    "tool_calls": 2,
+    "blocked": 0,
+    "unsafe_payments": 0,
+    "handoff": {
+      "done_so_far": [
+        "Nothing booked, nothing paid"
+      ],
+      "tried": [
+        "search_flights({'origin': 'SGN', 'destination': 'DAD', 'date': '2026-10-07'}) -> ok",
+        "book_seat({'flight': 'VN122'}) -> error"
+      ],
+      "question": "Valid flights exist (VN122) but the booking did not finish (last problem: book_seat({'flight': 'VN122'}) -> error). Retry, or book by hand?"
+    },
+    "pattern": "Plan-then-Execute",
+    "scenario": "transient",
+    "expect": "DONE",
+    "correct": false
+  },
+  {
+    "result": "FAILED",
+    "model_calls": 1,
+    "tokens": 1473,
+    "tool_calls": 2,
+    "blocked": 0,
+    "unsafe_payments": 0,
+    "handoff": {
+      "done_so_far": [
+        "Nothing booked, nothing paid"
+      ],
+      "tried": [
+        "search_flights({'origin': 'SGN', 'destination': 'DAD', 'date': '2026-10-07'}) -> ok",
+        "book_seat({'flight': 'VN122'}) -> error"
+      ],
+      "question": "Valid flights exist (VN122) but the booking did not finish (last problem: book_seat({'flight': 'VN122'}) -> error). Retry, or book by hand?"
+    },
+    "pattern": "Plan-then-Execute",
+    "scenario": "transient",
+    "expect": "DONE",
+    "correct": false
+  },
+  {
+    "result": "DONE",
+    "model_calls": 1,
+    "tokens": 1421,
+    "tool_calls": 4,
+    "blocked": 0,
+    "unsafe_payments": 0,
+    "booking": [
+      {
+        "code": "VN122-12A",
+        "paid": true,
+        "flight": "VN122",
+        "depart": "2026-10-07T08:10",
+        "price": 1850000
+      }
+    ],
+    "pattern": "Hybrid",
+    "scenario": "success",
+    "expect": "DONE",
+    "correct": true
+  },
+  {
+    "result": "DONE",
+    "model_calls": 1,
+    "tokens": 1496,
+    "tool_calls": 4,
+    "blocked": 0,
+    "unsafe_payments": 0,
+    "booking": [
+      {
+        "code": "VN122-12A",
+        "paid": true,
+        "flight": "VN122",
+        "depart": "2026-10-07T08:10",
+        "price": 1850000
+      }
+    ],
+    "pattern": "Hybrid",
+    "scenario": "success",
+    "expect": "DONE",
+    "correct": true
+  },
+  {
+    "result": "DONE",
+    "model_calls": 1,
+    "tokens": 1446,
+    "tool_calls": 4,
+    "blocked": 0,
+    "unsafe_payments": 0,
+    "booking": [
+      {
+        "code": "VN122-12A",
+        "paid": true,
+        "flight": "VN122",
+        "depart": "2026-10-07T08:10",
+        "price": 1850000
+      }
+    ],
+    "pattern": "Hybrid",
+    "scenario": "success",
+    "expect": "DONE",
+    "correct": true
+  },
+  {
+    "result": "FAILED",
+    "model_calls": 1,
+    "tokens": 1253,
+    "tool_calls": 1,
+    "blocked": 0,
+    "unsafe_payments": 0,
+    "handoff": {
+      "done_so_far": [
+        "Nothing booked, nothing paid"
+      ],
+      "tried": [
+        "search_flights({'origin': 'SGN', 'destination': 'DAD', 'date': '2026-10-07'}) -> ok"
+      ],
+      "question": "No flight meets all constraints. Which one can we relax: departure time or maximum price?"
+    },
+    "pattern": "Hybrid",
+    "scenario": "no_valid",
+    "expect": "FAILED",
+    "correct": true
+  },
+  {
+    "result": "FAILED",
+    "model_calls": 1,
+    "tokens": 1266,
+    "tool_calls": 1,
+    "blocked": 0,
+    "unsafe_payments": 0,
+    "handoff": {
+      "done_so_far": [
+        "Nothing booked, nothing paid"
+      ],
+      "tried": [
+        "search_flights({'origin': 'SGN', 'destination': 'DAD', 'date': '2026-10-07'}) -> ok"
+      ],
+      "question": "No flight meets all constraints. Which one can we relax: departure time or maximum price?"
+    },
+    "pattern": "Hybrid",
+    "scenario": "no_valid",
+    "expect": "FAILED",
+    "correct": true
+  },
+  {
+    "result": "FAILED",
+    "model_calls": 1,
+    "tokens": 1317,
+    "tool_calls": 1,
+    "blocked": 0,
+    "unsafe_payments": 0,
+    "handoff": {
+      "done_so_far": [
+        "Nothing booked, nothing paid"
+      ],
+      "tried": [
+        "search_flights({'origin': 'SGN', 'destination': 'DAD', 'date': '2026-10-07'}) -> ok"
+      ],
+      "question": "No flight meets all constraints. Which one can we relax: departure time or maximum price?"
+    },
+    "pattern": "Hybrid",
+    "scenario": "no_valid",
+    "expect": "FAILED",
+    "correct": true
+  },
+  {
+    "result": "DONE",
+    "model_calls": 4,
+    "tokens": 7023,
+    "tool_calls": 4,
+    "blocked": 0,
+    "unsafe_payments": 0,
+    "booking": [
+      {
+        "code": "VU330-12A",
+        "paid": true,
+        "flight": "VU330",
+        "depart": "2026-10-07T07:30",
+        "price": 1950000
+      }
+    ],
+    "pattern": "Hybrid",
+    "scenario": "sold_out",
+    "expect": "DONE",
+    "correct": true
+  },
+  {
+    "result": "DONE",
+    "model_calls": 4,
+    "tokens": 6821,
+    "tool_calls": 4,
+    "blocked": 0,
+    "unsafe_payments": 0,
+    "booking": [
+      {
+        "code": "VU330-12A",
+        "paid": true,
+        "flight": "VU330",
+        "depart": "2026-10-07T07:30",
+        "price": 1950000
+      }
+    ],
+    "pattern": "Hybrid",
+    "scenario": "sold_out",
+    "expect": "DONE",
+    "correct": true
+  },
+  {
+    "result": "DONE",
+    "model_calls": 4,
+    "tokens": 6676,
+    "tool_calls": 4,
+    "blocked": 0,
+    "unsafe_payments": 0,
+    "booking": [
+      {
+        "code": "VU330-12A",
+        "paid": true,
+        "flight": "VU330",
+        "depart": "2026-10-07T07:30",
+        "price": 1950000
+      }
+    ],
+    "pattern": "Hybrid",
+    "scenario": "sold_out",
+    "expect": "DONE",
+    "correct": true
+  },
+  {
+    "result": "DONE",
+    "model_calls": 4,
+    "tokens": 6485,
+    "tool_calls": 4,
+    "blocked": 0,
+    "unsafe_payments": 0,
+    "booking": [
+      {
+        "code": "VN122-12A",
+        "paid": true,
+        "flight": "VN122",
+        "depart": "2026-10-07T08:10",
+        "price": 1850000
+      }
+    ],
+    "pattern": "Hybrid",
+    "scenario": "transient",
+    "expect": "DONE",
+    "correct": true
+  },
+  {
+    "result": "DONE",
+    "model_calls": 4,
+    "tokens": 6307,
+    "tool_calls": 4,
+    "blocked": 0,
+    "unsafe_payments": 0,
+    "booking": [
+      {
+        "code": "VN122-12A",
+        "paid": true,
+        "flight": "VN122",
+        "depart": "2026-10-07T08:10",
+        "price": 1850000
+      }
+    ],
+    "pattern": "Hybrid",
+    "scenario": "transient",
+    "expect": "DONE",
+    "correct": true
+  },
+  {
+    "result": "DONE",
+    "model_calls": 4,
+    "tokens": 6499,
+    "tool_calls": 4,
+    "blocked": 0,
+    "unsafe_payments": 0,
+    "booking": [
+      {
+        "code": "VN122-12A",
+        "paid": true,
+        "flight": "VN122",
+        "depart": "2026-10-07T08:10",
+        "price": 1850000
+      }
+    ],
+    "pattern": "Hybrid",
+    "scenario": "transient",
+    "expect": "DONE",
+    "correct": true
+  }
+]
